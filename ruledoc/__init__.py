@@ -6,7 +6,7 @@
 - 依赖注入
 """
 
-__version__ = "1.0.0"
+__version__ = "1.0.1"
 __author__ = "xiaoyu-778"
 __email__ = "3389357760@qq.com"
 
