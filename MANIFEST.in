@@ -1,0 +1,33 @@
+# Include essential files
+include README.md
+include LICENSE
+include CHANGELOG.md
+include CONTRIBUTING.md
+include CODE_OF_CONDUCT.md
+include pyproject.toml
+
+# Exclude unnecessary files
+global-exclude *.pyc
+global-exclude *.pyo
+global-exclude *.pyd
+global-exclude __pycache__
+global-exclude .DS_Store
+
+# Exclude development and CI files
+exclude .gitignore
+exclude .gitattributes
+exclude Makefile
+exclude tox.ini
+exclude .pre-commit-config.yaml
+
+# Exclude test files from distribution
+recursive-exclude tests *
+recursive-exclude .github *
+
+# Exclude documentation build files
+recursive-exclude docs/_build *
+recursive-exclude docs/_static *
+recursive-exclude docs/_templates *
+
+# Include type hints
+recursive-include ruledoc py.typed
